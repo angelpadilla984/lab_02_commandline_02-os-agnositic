@@ -19,7 +19,7 @@ $ echo hello
 Copy and paste the output below.
 ----------
 
-
+hello
 
 ==========
 2. Type:
@@ -29,7 +29,7 @@ $ echo hello there
 Copy and paste the output below.
 ----------
 
-
+hello there
 
 ==========
 3. Type:
@@ -39,7 +39,7 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
-
+>
 
 ==========
 4. Uh-oh... we're stuck!
@@ -47,7 +47,7 @@ Copy and paste the output below.
 Type [CTRL + C] to get your prompt back.
 ----------
 
-
+Prompt is back
 
 ==========
 5. Say good mornin' again with quotes!
@@ -57,7 +57,7 @@ $ echo "good mornin'"
 Copy and paste the output below.
 ----------
 
-
+good mornin'
 
 ==========
 6. There are some other symbols that have special meanings if you don't quote them.  For example, > brings up a different prompt.  Try *.
@@ -67,7 +67,7 @@ $ echo *
 What happens?
 ----------
 
-
+foo food
 
 ==========
 7. Ok... that's a lot of output.  How do we clean up our screen so that it's empty again?
@@ -75,7 +75,7 @@ What happens?
 Write the command that you used below:
 ----------
 
-
+clear
 
 ==========
 We're going to practice downloading files from a web site.  We'll use this practice to download more lab materials!
@@ -88,7 +88,12 @@ $ curl google.com
 Copy and paste the output below.
 ----------
 
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY> 
+<H1>301 Moved</H1> 
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML> 
 
 ==========
 9. And again.  This time, add www to the URL.
@@ -98,7 +103,7 @@ $ curl www.google.com
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
 
-
+<title>Google</title>
 
 ==========
 10. That's great, but what if I want to save the file?  What flag/option and option argument would I use to download the page to a file called google.html?  Run it to download the URL www.google.com.
@@ -106,7 +111,7 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 Write the command you used below.  Also copy and paste the output below.
 ----------
 
-
+curl -o
 
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
@@ -114,6 +119,8 @@ Write the command you used below.  Also copy and paste the output below.
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
 
+$ pwd
+/c/Users/angel/Rough Draft 2/Assets/mtec1003
 
 
 ==========
@@ -122,7 +129,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-
+cd ~
 
 ==========
 13. So... the lab materials are located at this url:
@@ -138,7 +145,13 @@ Use ls to verify that it downloaded.
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
 
+$ curl -o filename.txt https://entertainmenttechnology.github.io/Viera-MTEC1003-fall-2018/mtec1003-lab-02.zip
 
+This was the output: 
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  920k  100  920k    0     0  4053k      0 --:--:-- --:--:-- --:--:-- 4092k
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
@@ -146,7 +159,7 @@ Write down the command that you used to download the file below.  Additionally, 
 Write down the command that you used to uncompress the file.
 ----------
 
-
+unzip
 
 ==========
 15. Change to the directory that was just created.  List the contents (of the directory that was extracted from the labs .zip file). 
@@ -154,7 +167,7 @@ Write down the command that you used to uncompress the file.
 Copy and paste the output below.
 ----------
 
-
+mtec1003-lab-02.zip
 
 ==========
 We're going to mess around with archiving and compressing files.  We'll make a directory with a file in it... archive and compress it.... and uncompress it elsewhere.
@@ -165,7 +178,54 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 Copy and paste the output below.
 ----------
 
-
+'3D Objects'/
+ aardvark/
+ AppData/
+'Application Data'@     
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/ 
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/     
+ Favorites/
+ IntelGraphicsProfiles/ 
+ lemon/
+ Links/
+'Local Settings'@       
+ MicrosoftEdgeBackups/  
+ MTEC/
+ Music/
+'My Documents'@
+ MyFirstGame/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1        
+ ntuser.dat.LOG2        
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms   
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms   
+ ntuser.ini
+ OneDrive/
+ orange/
+ PaceKeyChain
+ pineapple/
+ PrintHood@
+ Recent@
+'Rough Draft'/
+'Rough Draft 2'/        
+'Rough Draft1'/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ strawberry/
+ stuff/
+ Templates@
+'Unity Coding'/
+ Videos/
 
 ==========
 17. Change into the "stuff" directory that you just created.  Run the following command (we haven't learned this exact command yet, but we will in the next lab!) exactly as described below:
@@ -177,7 +237,55 @@ List the files in the directory you're currently in (which should be stuff).
 Copy and paste the output below.
 ----------
 
-
+'3D Objects'/
+ aardvark/
+ AppData/
+'Application Data'@     
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/ 
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/     
+ Favorites/
+ hello.txt
+ IntelGraphicsProfiles/ 
+ lemon/
+ Links/
+'Local Settings'@       
+ MicrosoftEdgeBackups/  
+ MTEC/
+ Music/
+'My Documents'@
+ MyFirstGame/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1        
+ ntuser.dat.LOG2        
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms   
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms   
+ ntuser.ini
+ OneDrive/
+ orange/
+ PaceKeyChain
+ pineapple/
+ PrintHood@
+ Recent@
+'Rough Draft'/
+'Rough Draft 2'/        
+'Rough Draft1'/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ strawberry/
+ stuff/
+ Templates@
+'Unity Coding'/
+ Videos/
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -189,7 +297,57 @@ List the files in the directory you're currently in (which should be home).
 Copy and paste the output below.
 ----------
 
-
+'3D Objects'/
+ aardvark/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/
+ Favorites/
+ hello.txt
+ IntelGraphicsProfiles/
+ lemon/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ MTEC/
+ Music/
+'My Documents'@
+ MyFirstGame/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ orange/
+ PaceKeyChain
+ pineapple/
+ PrintHood@
+ Recent@
+'Rough Draft'/
+'Rough Draft 2'/
+'Rough Draft1'/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ strawberry/
+ stuff/
+ stuff.tar
+ stuff.tar.gz
+ Templates@
+'Unity Coding'/
+ Videos/
 
 ==========
 19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -199,7 +357,7 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
+stuff/
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
@@ -207,6 +365,56 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
+'3D Objects'/
+ aardvark/
+ AppData/
+'Application Data'@     
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/ 
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/     
+ Favorites/
+ hello.txt
+ IntelGraphicsProfiles/ 
+ lemon/
+ Links/
+'Local Settings'@       
+ MicrosoftEdgeBackups/  
+ MTEC/
+ Music/
+'My Documents'@
+ MyFirstGame/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1        
+ ntuser.dat.LOG2        
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms   
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms   
+ ntuser.ini
+ OneDrive/
+ orange/
+ PaceKeyChain
+ pineapple/
+ PrintHood@
+ Recent@
+'Rough Draft'/
+'Rough Draft 2'/        
+'Rough Draft1'/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ strawberry/
+ stuff/
+ stuff.tar
+ Templates@
+'Unity Coding'/
+ Videos/
 
 
 ==========
@@ -217,6 +425,56 @@ gzip stuff.tar
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
 
+'3D Objects'/
+ aardvark/
+ AppData/
+'Application Data'@     
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/ 
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/     
+ Favorites/
+ hello.txt
+ IntelGraphicsProfiles/ 
+ lemon/
+ Links/
+'Local Settings'@       
+ MicrosoftEdgeBackups/  
+ MTEC/
+ Music/
+'My Documents'@
+ MyFirstGame/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1        
+ ntuser.dat.LOG2        
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms   
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms   
+ ntuser.ini
+ OneDrive/
+ orange/
+ PaceKeyChain
+ pineapple/
+ PrintHood@
+ Recent@
+'Rough Draft'/
+'Rough Draft 2'/        
+'Rough Draft1'/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ strawberry/
+ stuff/
+ stuff.tar.gz
+ Templates@
+'Unity Coding'/
+ Videos/
 
 
 ==========
@@ -230,7 +488,57 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+'3D Objects'/
+ aardvark/
+ AppData/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/
+ Favorites/
+ hello.txt
+ IntelGraphicsProfiles/
+ lemon/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ MTEC/
+ Music/
+'My Documents'@
+ MyFirstGame/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ orange/
+ PaceKeyChain
+ pineapple/
+ PrintHood@
+ Recent@
+'Rough Draft'/
+'Rough Draft 2'/
+'Rough Draft1'/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ strawberry/
+ stuff/
+ stuff.tar
+ stuff.tar.gz
+ Templates@
+'Unity Coding'/
+ Videos/
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -240,7 +548,8 @@ $ tar -xvf stuff.tar.gz
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
 
-
+tar: stuff.tar.gz: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
 
 ==========
 24. Go back to your home directory
@@ -259,8 +568,13 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 Write out the commands that you used to do this.
 ----------
 
+$ curl -o filename.txt https://entertainmenttechnology.github.io/Viera-MTEC1003-fall-2018/secret.tar.gz
 
+$ tar -xvf secret.tar.gz
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+
+When I enter the tar -xvf command, it gives me the same error as it did before when I was trying to uncompress stuff.tar.gz. I don't know if this was a mistake on my end considering that I pressed clear at one point but I don't think that's the case at all.
+I tried my best in attempting the overall problem as best as I could and hopefully we can resolve this soon for next class.
